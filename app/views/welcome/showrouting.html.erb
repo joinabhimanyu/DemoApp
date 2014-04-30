@@ -1,0 +1,36 @@
+<div class="well">
+<h1>1 The Purpose of the Rails Router</h1>
+<p>
+	The Rails router recognizes URLs and dispatches them to a controller's action. It can also generate paths and URLs, avoiding the need to hardcode strings in your views.
+</p>
+</div>
+
+<div class="well">
+<h3>1.1 Connecting URLs to Code</h3>
+<p>
+	When your Rails application receives an incoming request for:
+
+	GET /patients/17
+
+	it asks the router to match it to a controller action. If the first matching route is:
+
+	get '/patients/:id', to: 'patients#show'
+
+	the request is dispatched to the patients controller's show action with { id: '17' } in params.
+</p>
+</div>
+
+<div class="well">
+<h3>1.1 Connecting URLs to Code</h3>
+<p>
+	When your Rails application receives an incoming request for:
+
+	GET /patients/17
+
+	it asks the router to match it to a controller action. If the first matching route is:
+
+	get '/patients/:id', to: 'patients#show'
+
+	the request is dispatched to the patients controller's show action with { id: '17' } in params.
+</p>
+</div>

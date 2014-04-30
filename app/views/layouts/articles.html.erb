@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Articles Page</title>
+  <%= stylesheet_link_tag    "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", "data-turbolinks-track" => true %>
+</head>
+<body>
+<div class="container">
+<div class="page-header">
+<h2>Articles</h2>
+</div>
+<div class="row">
+<%= yield %>
+</div>
+</div>
+</body>
+</html>

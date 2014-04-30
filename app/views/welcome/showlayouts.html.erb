@@ -1,0 +1,19 @@
+<div class="well">
+<h1>1 Overview: How the Pieces Fit Together</h1>
+<p>
+	This guide focuses on the interaction between Controller and View in the Model-View-Controller triangle. As you know, the Controller is responsible for orchestrating the whole process of handling a request in Rails, though it normally hands off any heavy code to the Model. But then, when it's time to send a response back to the user, the Controller hands things off to the View. It's that handoff that is the subject of this guide.
+
+In broad strokes, this involves deciding what should be sent as the response and calling an appropriate method to create that response. If the response is a full-blown view, Rails also does some extra work to wrap the view in a layout and possibly to pull in partial views. You'll see all of those paths later in this guide.
+</div>
+
+<div class="well">
+<h1>2 Creating Responses</h1>
+<p>
+	From the controller's point of view, there are three ways to create an HTTP response:
+	<ul>
+		<li>Call render to create a full response to send back to the browser</li>
+		<li>Call redirect_to to send an HTTP redirect status code to the browser</li>
+		<li>Call head to create a response consisting solely of HTTP headers to send back to the browser</li>
+	</ul>
+</p>
+</div>

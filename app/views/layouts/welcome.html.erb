@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Page</title>
+  <%= stylesheet_link_tag    "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", "data-turbolinks-track" => true %>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Rails</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/welcome/action">Action Controllers</a></li>
+        <li class="active"><a href="/welcome/layout">Layouts and Rendering</a></li>
+        <li class="active"><a href="/welcome/routing">Rails Routing</a></li>
+        <li class="active"><%= link_to 'Articles', articles_path %></li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+</div>
+<div class="row" style="margin-top:70px;margin-bottom:50px;">
+<%= yield %>
+</div>
+</div>
+</body>
+</html>
